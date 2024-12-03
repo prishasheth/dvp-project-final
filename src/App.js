@@ -7,13 +7,16 @@ function App() {
     const sections = [
         {
             type: "paragraph",
-            content: "What makes someone an innovator? Is it their upbringing, the schools they attend, or the opportunities they encounter along the way? Across the United States, inventors create ideas that not only change industries but also shape the future. Innovation is deeply influenced by the resources and opportunities available to individuals. Key factors such as gender, family income, geography, and access to education can determine who has the chance to turn their ideas into reality. Understanding these influences is important to make informed decisions about a child’s upbringing and to provide children with the support and encouragement needed to spark creativity and drive innovation.",
+            content: [
+                "What makes someone an innovator? Is it their upbringing, the schools they attend, or the opportunities they encounter along the way?",
+                "Across the United States, inventors create ideas that not only change industries but also shape the future. Innovation is deeply influenced by the resources and opportunities available to individuals. Key factors such as gender, family income, geography, and access to education can determine who has the chance to turn their ideas into reality. Understanding these influences is important to make informed decisions about a child’s upbringing and to provide children with the support and encouragement needed to spark creativity and drive innovation.",
+            ],
         },
         {
             type: "dashboard", 
             url: "https://public.tableau.com/views/InventorsbyState/InventorsByStateandCZ?:language=en-US&publish=yes&:origin=viz_share_link",
             title: "InventorsByStateandCZ", 
-            description: "To better understand innovation rates across various factors, let’s first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*.  As we can see, California has the highest number of inventors in the US, with 3956 inventors, followed by New York which has a significantly lower count of 2166.",
+            description: "To better understand innovation rates across various factors, let’s first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*. As we can see, California has the highest number of inventors in the US, with 3956 inventors, followed by New York which has a significantly lower count of 2166.",
             width: "100%", 
             height: "520px", 
         },
@@ -70,7 +73,7 @@ function App() {
         },
         {
           type: "dashboard",
-          url: "https://public.tableau.com/shared/M5H93WGST?:display_count=n&:origin=viz_share_link",
+          url: "https://public.tableau.com/views/DVP_Table2/FinalComparisonofApplicantCountandGranteeCountByAgeForAnyYear?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Comparison of Applicant Count and Grantee Count By Age",
           description: "Over the years, we observe that the gap between applicant and grantee counts is widening, indicating that a smaller proportion of applicants are being granted patents.",
           width: "100%", 
@@ -84,58 +87,65 @@ function App() {
           url: "https://public.tableau.com/shared/5Y6YHX9S7?:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
           description: "For each gender, we can observe the counts of patent applicants and grantees. As with earlier observations, female patent applicants and grantees are significantly lower than their male counterparts. Also, we can observe that the gap between applicants and grantees follows a similar pattern to earlier as well. As age increases, the gap between applicants and grantees widens until it peaks, then the gap begins to decrease.",
-          width: "100%", 
-          height: "800px",
+          width: "100%",
+        },
+        {
+            type: "paragraph",
+            content: "Now, let’s shift our attention to the number of patents produced by different regions across the United States.",
         },
         {
             type: "image",
+            description: "This map distorts the size of regions based on the number of patents they produce, making areas with more patents appear larger and those with fewer appear smaller.  A clear regional pattern is evident, with states in the West, Northeast, and Midwest region producing the most patents, while states in the Southeast and Southwest contribute fewer patents. This highlights the uneven distribution of patent production across the country.",
             src: cartogramImage,
-            title: "Cartogram",
-            description: "This image represents gender distribution across different industries, based on recent data.",
-            width: "100%", 
+            width: "100%",
+        }, 
+        {
+            type: "paragraph",
+            content: "Next, let’s take a closer look into individual states to examine their contribution to the total number of patents.",
         },
         {
           type: "dashboard",
           url: "https://public.tableau.com/views/CS6730/ParetoChart?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
-          description: "This dashboard examines gender data across various regions, illustrating differences in participation rates.",
-        },
-        {
-          type: "dashboard",
-          url: "https://public.tableau.com/views/CS6730/PatentShareonParentalIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
-          description: "This dashboard examines gender data across various regions, illustrating differences in participation rates.",
+          description: "By examining the bars for each state and the cumulative line, we can see how a few states account for the majority of the patents, with the remaining states contributing far less. California leads with a notably higher patent count than the other states, highlighting its dominant role in patent production.",
           width: "100%", 
         },
         {
             type: "paragraph",
-            content: "The following visualization presents an in-depth Pareto analysis of key processes.",
-        },
-        {
-            type: "dashboard",
-            url: "https://public.tableau.com/views/Book3_17331659142060/MeanAvgIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-            title: "Dashboard 2",
-            description: "",
-            width: "100%", 
-          },
-        {
-            type: "paragraph",
-            content: "The following visualization presents an in-depth Pareto analysis of key processes.",
+            content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
         },
         {
             type: "dashboard",
             url: "https://public.tableau.com/views/Book1_17317883274520/citationsvsPatents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
-            description: "",
+            description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
+            width: "100%", 
+        },
+        {
+            type: "paragraph",
+            content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
+        },
+        {
+          type: "dashboard",
+          url: "https://public.tableau.com/views/CS6730/PatentShareonParentalIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+          title: "Dashboard 2",
+          description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In states like Massachusetts, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable gap in inventor representation across parental income levels nationwide.",
+          width: "100%"
+        },
+        {
+            type: "paragraph",
+            content: "Finally, let’s look at how the median and mean incomes of inventors have evolved over time.",
+        },
+        {
+            type: "dashboard",
+            url: "https://public.tableau.com/views/Book3_17331659142060/MeanAvgIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+            title: "Dashboard 2",
+            description: "The median income remains relatively steady, while the mean income fluctuates significantly. The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
             width: "100%", 
           },
         {
             type: "paragraph",
-            content: "The following visualization presents an in-depth Pareto analysis of key processes.",
-        },
-        {
-            type: "paragraph",
-            content: "In conclusion, the sections above provide a mix of interactive dashboards and visual representations.",
+            content: ["We hope you had fun following the journey of an inventor and learning about different factors that relate to innovation!", "Feel free to look back at the interactive visualizations to find additional insights and explore the data based on what you learned!", "Happy exploring!"],
         },
     ];
 
@@ -146,7 +156,9 @@ function App() {
                 if (section.type === "paragraph") {
                     return (
                         <div key={index} className="paragraph-section">
-                            <p>{section.content}</p>
+                            {Array.isArray(section.content)
+                                ? section.content.map((text, i) => <p key={i}>{text}</p>)
+                                : <p>{section.content}</p>}
                         </div>
                     );
                 }

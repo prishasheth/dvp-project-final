@@ -1,29 +1,28 @@
-/* Import the Libre Franklin font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap');
 
 body {
   margin: 0;
   font-family: 'Libre Franklin', Arial, sans-serif;
   text-align: center;
-  line-height: 1.6; /* Global line spacing for better readability */
+  line-height: 1.6;
 }
 
 .app-container {
-  width: 85%; /* Total width is constrained to 80% of the screen */
-  margin: 0 auto; /* Center-align the app-container horizontally */
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
   margin-bottom: 40px;
-  font-weight: 600; /* Semi-bold heading */
-  line-height: 1.4; /* Slightly tighter line spacing for headings */
+  font-weight: 600;
+  line-height: 1.4; 
 }
 
 h2 {
   margin-bottom: 20px;
   font-weight: 600;
-  line-height: 1.4; /* Tighter line spacing for subheadings */
+  line-height: 1.4; 
 }
 
 .section {
@@ -35,38 +34,38 @@ h2 {
 
 .dashboard-section {
   display: flex;
-  align-items: center; /* Vertically center content within each section */
+  align-items: center; 
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  text-align: left; /* Ensure left-aligned text for descriptions */
-  width: 100%; /* Use full width of the app-container */
-  margin: 40px 0; /* Add vertical spacing above and below each dashboard section */
+  flex-wrap: wrap; 
+  text-align: left;
+  width: 100%;
+  margin: 40px 0;
 }
 
 .dashboard-text {
-  flex: 1; /* Take up equal space */
-  width: 100%; /* Ensure it respects the 80% container width */
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
-  font-weight: 400; /* Normal weight for body text */
-  line-height: 1.8; /* Increased line spacing for better readability */
-  display: flex; /* Use Flexbox for vertical alignment */
-  align-items: center; /* Center text vertically */
+  flex: 1; 
+  width: 100%;
+  box-sizing: border-box; 
+  font-weight: 400;
+  line-height: 1.8;
+  display: flex; 
+  align-items: center;
   margin-right: 80px;
 }
 
 .dashboard-container {
-  flex: 2; /* Dashboard/image gets more space */
+  flex: 2; 
   display: flex;
   justify-content: center;
-  align-items: center; /* Center dashboard/image vertically */
-  width: 100%; /* Ensure it respects the 80% container width */
+  align-items: center; 
+  width: 100%;
 }
 
 .paragraph-section {
-  margin: 40px auto; /* Add vertical spacing above and below each paragraph section */
-  text-align: justify; /* Paragraphs are justified */
-  width: 100%; /* Ensure it respects the 80% container width */
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
-  line-height: 1.8; /* Increased line spacing for paragraphs */
+  margin: 40px auto; 
+  text-align: justify;
+  width: 100%;
+  box-sizing: border-box; 
+  line-height: 1.8; 
 }
