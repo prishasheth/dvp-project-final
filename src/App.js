@@ -1,6 +1,7 @@
 import React from "react";
 import TableauEmbed from "./components/TableauEmbed";
 import "./App.css";
+import cartogramImage from "./cartogram.png";
 
 function App() {
     const sections = [
@@ -11,7 +12,7 @@ function App() {
         {
             type: "dashboard", 
             url: "https://public.tableau.com/views/InventorsbyState/InventorsByStateandCZ?:language=en-US&publish=yes&:origin=viz_share_link",
-            title: "Dashboard 1", 
+            title: "InventorsByStateandCZ", 
             description: "To better understand innovation rates across various factors, let’s first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*.  As we can see, California has the highest number of inventors in the US, with 3956 inventors, followed by New York which has a significantly lower count of 2166.",
             width: "100%", 
             height: "520px", 
@@ -23,7 +24,7 @@ function App() {
         {
           type: "dashboard",
           url: "https://public.tableau.com/shared/RHJXFPG82?:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
+          title: "Count by Gender",
           description: "In all regions, the number of female inventors is noticeably lower than that of male inventors. This trend is consistent at the state level, where female inventor counts remain significantly lower than their male counterparts across every state. Click on any region or measure to explore the data and uncover specific insights.",
           width: "100%",
           height: "800px",
@@ -35,7 +36,7 @@ function App() {
         {
           type: "dashboard",
           url: "https://public.tableau.com/views/GenderData_17331650303770/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
+          title: "Category by Gender",
           description: "Comparing the number of inventors across categories reveals that the Computers and Communications category has the highest total, with the Northeast region contributing 2,712 inventors to this category. Among the seven categories, the Drugs and Medical category stands out for having the highest proportion of female inventors. Use the highlight table to filter data for the pie charts by clicking on any cell, row, or column. This allows you to compare the number of inventors by gender based on your selection on the table.",
           width: "100%", 
           height: "800px",
@@ -47,7 +48,7 @@ function App() {
         {
           type: "dashboard",
           url: "https://public.tableau.com/shared/8F7W3HSJ2?:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
+          title: "Applicant to Grantee Ratio",
           description: "States with a higher applicant-to-grantee ratio indicate a larger gap between patent applicants and grantees, suggesting that in those states, a smaller proportion of applicants are granted patents. Washington D.C. has the highest applicant-to-grantee ratio of 1.47, indicating that for every grantee, there are 1.47 applicants, suggesting a relatively larger gap between applicants and those granted patents in the region.",
           width: "100%", 
           height: "800px",
@@ -59,7 +60,7 @@ function App() {
         {
           type: "dashboard",
           url: "https://public.tableau.com/shared/M5H93WGST?:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
+          title: "Comparison of Applicant Count and Grantee Count By Age",
           description: "We observe a bell curve pattern in both applicant and grantee counts as age increases. The gap between applicant and grantee counts widens until it peaks around age 41, after which the gap begins to decrease.",
           width: "100%", 
         },
@@ -69,8 +70,8 @@ function App() {
         },
         {
           type: "dashboard",
-          url: "https://public.tableau.com/shared/DK8PD4FC8?:display_count=n&:origin=viz_share_link",
-          title: "Dashboard 2",
+          url: "https://public.tableau.com/shared/M5H93WGST?:display_count=n&:origin=viz_share_link",
+          title: "Comparison of Applicant Count and Grantee Count By Age",
           description: "Over the years, we observe that the gap between applicant and grantee counts is widening, indicating that a smaller proportion of applicants are being granted patents.",
           width: "100%", 
         },
@@ -88,11 +89,10 @@ function App() {
         },
         {
             type: "image",
-            src: "cartogram",
-            title: "Image 1",
+            src: cartogramImage,
+            title: "Cartogram",
             description: "This image represents gender distribution across different industries, based on recent data.",
-            width: "80%", 
-            height: "400px", 
+            width: "100%", 
         },
         {
           type: "dashboard",
