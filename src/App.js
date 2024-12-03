@@ -116,7 +116,7 @@ function App() {
         },
         {
             type: "dashboard",
-            url: "https://public.tableau.com/views/Book1_17317883274520/citationsvsPatents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+            url: "https://public.tableau.com/views/Book1_17317883274520/CitationsandPAtents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
             description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
             width: "100%", 
@@ -138,7 +138,7 @@ function App() {
         },
         {
             type: "dashboard",
-            url: "https://public.tableau.com/views/Book3_17331659142060/MeanAvgIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+            url: "https://public.tableau.com/views/Book3_17331659142060/MeanAndAverageIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
             description: "The median income remains relatively steady, while the mean income fluctuates significantly. The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
             width: "100%", 
