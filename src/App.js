@@ -9,7 +9,7 @@ function App() {
         {
             type: "image-and-text",
             title: "Charting the Course of Innovation: Insights into Inventor Success Factors",
-            authors: ["Harita Patel, Prisha Sheth, Ajay Bhat, Saikrishnan Sankar"],
+            authors: ["Harita Patel, Prisha Sheth, Ajay Bhat, Saikrishnan Sankar "],
             imageSrc: innovationImage, // Replace with the correct path to your image
             altText: "An image showing global forest decline",
         },
@@ -45,7 +45,7 @@ function App() {
             content: "We can gain further insights into inventor counts by considering invention categories alongside region and gender.",
         },
         {
-          type: "dashboard",
+          type: "dashboardfull",
           url: "https://public.tableau.com/views/GenderData_17331650303770/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Category by Gender",
           description: "Comparing the number of inventors across categories reveals that the Computers and Communications category has the highest total, with the Northeast region contributing 2,712 inventors to this category. Among the seven categories, the Drugs and Medical category stands out for having the highest proportion of female inventors. Use the highlight table to filter data for the pie charts by clicking on any cell, row, or column. This allows you to compare the number of inventors by gender based on your selection on the table.",
@@ -112,7 +112,7 @@ function App() {
             content: "Next, let’s take a closer look into individual states to examine their contribution to the total number of patents.",
         },
         {
-          type: "dashboard",
+          type: "dashboardfull",
           url: "https://public.tableau.com/views/CS6730/ParetoChart?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
           description: "By examining the bars for each state and the cumulative line, we can see how a few states account for the majority of the patents, with the remaining states contributing far less. California leads with a notably higher patent count than the other states, highlighting its dominant role in patent production.",
@@ -134,7 +134,7 @@ function App() {
             content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
         },
         {
-          type: "dashboard",
+          type: "dashboardfull",
           url: "https://public.tableau.com/views/CS6730/PatentShareonParentalIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
           description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In states like Massachusetts, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable gap in inventor representation across parental income levels nationwide.",
@@ -207,6 +207,24 @@ function App() {
                                             width={section.width}
                                             height={section.height}
                                         />
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    }
+                    if (section.type === "dashboardfull") {
+                        return (
+                            <div key={index} className="section">
+                                <div className="dashboard-section flipped">
+                                    <div className="dashboardfull-container">
+                                        <TableauEmbed
+                                            url={section.url}
+                                            width={section.width}
+                                            height={section.height}
+                                        />
+                                    </div>
+                                    <div className="dashboardfull-text">
+                                        <p>{section.description}</p>
                                     </div>
                                 </div>
                             </div>

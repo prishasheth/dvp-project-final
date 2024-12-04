@@ -64,6 +64,36 @@ h2 {
   width: 100%;
 }
 
+.dashboardfull-section {
+  display: flex;
+  flex-direction: column; /* Change to column for full-width dashboard */
+  align-items: center; 
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.dashboardfull-container {
+  flex: none; /* Remove flex-grow, making it occupy only its content size */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  margin-bottom: 20px; /* Space below the embedded container */
+}
+
+.dashboardfull-text {
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left; /* Center text under the container */
+}
+
+
 .paragraph-section {
   margin: 40px auto;
   text-align: left;
