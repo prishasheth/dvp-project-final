@@ -42,7 +42,7 @@ h2 {
   flex-wrap: wrap; 
   text-align: left;
   width: 100%;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .dashboard-text {
@@ -93,9 +93,17 @@ h2 {
   text-align: left; 
 }
 
-
 .paragraph-section {
-  margin: 40px auto;
+  margin: 30px auto;
+  text-align: left;
+  width: 90%;
+  box-sizing: border-box;
+  line-height: 1.8;
+  font-size: 19px; 
+}
+
+.definition-section {
+  margin: 30px auto;
   text-align: left;
   width: 90%;
   box-sizing: border-box;

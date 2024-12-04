@@ -24,10 +24,14 @@ function App() {
             type: "dashboard", 
             url: "https://public.tableau.com/views/InventorsbyState/InventorsByStateandCZ?:language=en-US&publish=yes&:origin=viz_share_link",
             title: "InventorsByStateandCZ", 
-            description: "To better understand innovation rates across various factors, let's first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*. <br /><br /> As we can see, <strong>California</strong> has the highest number of inventors in the US, with 3956 inventors, followed by <strong>New York</strong> which has a significantly lower count of 2166.",
+            description: "To better understand innovation rates across various factors, let's first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*. <br /><br /> As we can see, <strong>California</strong> has the highest number of inventors in the US, with 3956 inventors, followed by <strong>New York</strong> which has a significantly lower count of 2166. <br /><br /> <i>*Commuting Zone: Residential Zip Code</i>",
             width: "100%", 
             height: "520px", 
         },
+        // {
+        //     type: "definition",
+        //     content: "Commuting Zone: Residential Zip Code",
+        // },
         {
             type: "paragraph",
             content: "Let's explore inventor counts by comparing the number of inventors across regions and genders.",
@@ -137,7 +141,7 @@ function App() {
           type: "dashboardfull",
           url: "https://public.tableau.com/views/CS6730/PatentShareonParentalIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
-          description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. <br /><br />Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In areas like <strong>Washington D.C.</strong> and <strong>Massachusetts</strong>, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable <strong>gap in inventor representation across parental income levels</strong> nationwide.",
+          description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. <br /><br />Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In areas like <strong>Washington D.C.</strong> and <strong>Massachusetts</strong>, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable <strong>gap in inventor representation across parental income levels</strong> nationwide.  <br /><br /> <i>*Parental Income Quintile: The quintile of the income distribution corresponding to the income level of the inventors' parents.</i>",
           width: "100%"
         },
         {
@@ -148,7 +152,7 @@ function App() {
             type: "dashboard",
             url: "https://public.tableau.com/views/Book3_17331659142060/MeanAndAverageIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
-            description: "The <strong>median income remains relatively steady</strong>, while the <strong>mean income fluctuates significantly</strong>. <br /><br />The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
+            description: "The <strong>median income remains relatively steady</strong>, while the <strong>mean income fluctuates significantly</strong>. <br /><br /> The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
             width: "100%", 
           },
         {
@@ -186,6 +190,15 @@ function App() {
                     if (section.type === "paragraph") {
                         return (
                             <div key={index} className="paragraph-section">
+                                {Array.isArray(section.content)
+                                    ? section.content.map((text, i) => <p key={i}>{text}</p>)
+                                    : <p>{section.content}</p>}
+                            </div>
+                        );
+                    }
+                    if (section.type === "definition") {
+                        return (
+                            <div key={index} className="definition-section">
                                 {Array.isArray(section.content)
                                     ? section.content.map((text, i) => <p key={i}>{text}</p>)
                                     : <p>{section.content}</p>}
