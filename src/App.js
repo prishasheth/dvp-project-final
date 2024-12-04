@@ -54,7 +54,6 @@ function App() {
           title: "Category by Gender",
           description: "Comparing the number of inventors across categories reveals that the <strong>Computers and Communications category</strong> has the highest total, with the <strong>Northeast</strong> region contributing 2,712 inventors to this category. <br /><br /> Among the seven categories, the <strong>Drugs and Medical category</strong> stands out for having the <strong>highest proportion of female inventors</strong>. <br /><br /> Use the highlight table to filter data for the pie charts by clicking on any cell, row, or column. This allows you to compare the number of inventors by gender based on your selection on the table.",
           width: "100%", 
-          height: "800px",
         },
         {
             type: "paragraph",
@@ -157,7 +156,7 @@ function App() {
           },
         {
             type: "paragraph",
-            content: ["We hope you had fun following the journey of an inventor and learning about different factors that relate to innovation!", "Feel free to look back at the interactive visualizations to find additional insights and explore the data based on what you learned!", "Happy exploring!"],
+            content: ["That concludes the journey of an inventor, from their early beginnings to achieving success through their innovations.", "We hope you had fun following the journey of an inventor and learning about different factors that relate to innovation!", "Feel free to look back at the interactive visualizations to find additional insights and explore the data based on what you learned! Happy exploring!"],
         },
     ];
 
