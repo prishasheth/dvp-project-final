@@ -9,6 +9,7 @@ function App() {
         {
             type: "image-and-text",
             title: "Charting the Course of Innovation: Insights into Inventor Success Factors",
+            authors: ["Harita Patel, Prisha Sheth, Ajay Bhat, Saikrishnan Sankar"],
             imageSrc: innovationImage, // Replace with the correct path to your image
             altText: "An image showing global forest decline",
         },
@@ -80,7 +81,7 @@ function App() {
         },
         {
           type: "dashboard",
-          url: "https://public.tableau.com/views/DVP_Table2/FinalComparisonofApplicantCountandGranteeCountByAgeForAnyYear?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+          url: "https://public.tableau.com/views/DVP_Table2/NewYearSliderFinal?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Comparison of Applicant Count and Grantee Count By Age",
           description: "Over the years, we observe that the gap between applicant and grantee counts is widening, indicating that a smaller proportion of applicants are being granted patents.",
           width: "100%", 
