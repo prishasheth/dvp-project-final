@@ -24,7 +24,7 @@ function App() {
             type: "dashboard", 
             url: "https://public.tableau.com/views/InventorsbyState/InventorsByStateandCZ?:language=en-US&publish=yes&:origin=viz_share_link",
             title: "InventorsByStateandCZ", 
-            description: "To better understand innovation rates across various factors, let's first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*. As we can see, <strong>California</strong> has the highest number of inventors in the US, with 3956 inventors, followed by <strong>New York</strong> which has a significantly lower count of 2166.",
+            description: "To better understand innovation rates across various factors, let's first begin by observing the total number of inventors by state in the US. Click on any state to delve deeper into how inventors are spread across different commuting zone*. <br /><br /> As we can see, <strong>California</strong> has the highest number of inventors in the US, with 3956 inventors, followed by <strong>New York</strong> which has a significantly lower count of 2166.",
             width: "100%", 
             height: "520px", 
         },
@@ -36,7 +36,7 @@ function App() {
           type: "dashboard",
           url: "https://public.tableau.com/shared/RHJXFPG82?:display_count=n&:origin=viz_share_link",
           title: "Count by Gender",
-          description: "In all regions, the <strong>number of female inventors is noticeably lower than that of male inventors</strong>. This trend is consistent at the state level, where female inventor counts remain significantly lower than their male counterparts across every state. Click on any region or measure to explore the data and uncover specific insights.",
+          description: "In all regions, the <strong>number of female inventors is noticeably lower than that of male inventors</strong>. This trend is consistent at the state level, where female inventor counts remain significantly lower than their male counterparts across every state. <br /><br /> Click on any region or measure to explore the data and uncover specific insights.",
           width: "100%",
           height: "800px",
         },
@@ -48,7 +48,7 @@ function App() {
           type: "dashboardfull",
           url: "https://public.tableau.com/views/GenderData_17331650303770/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Category by Gender",
-          description: "Comparing the number of inventors across categories reveals that the <strong>Computers and Communications category</strong> has the highest total, with the <strong>Northeast</strong> region contributing 2,712 inventors to this category. Among the seven categories, the <strong>Drugs and Medical category</strong> stands out for having the <strong>highest proportion of female inventors</strong>. Use the highlight table to filter data for the pie charts by clicking on any cell, row, or column. This allows you to compare the number of inventors by gender based on your selection on the table.",
+          description: "Comparing the number of inventors across categories reveals that the <strong>Computers and Communications category</strong> has the highest total, with the <strong>Northeast</strong> region contributing 2,712 inventors to this category. <br /><br /> Among the seven categories, the <strong>Drugs and Medical category</strong> stands out for having the <strong>highest proportion of female inventors</strong>. <br /><br /> Use the highlight table to filter data for the pie charts by clicking on any cell, row, or column. This allows you to compare the number of inventors by gender based on your selection on the table.",
           width: "100%", 
           height: "800px",
         },
@@ -60,7 +60,7 @@ function App() {
           type: "dashboard",
           url: "https://public.tableau.com/shared/8F7W3HSJ2?:display_count=n&:origin=viz_share_link",
           title: "Applicant to Grantee Ratio",
-          description: "States with a higher applicant-to-grantee ratio indicate a larger gap between patent applicants and grantees, suggesting that in those states, a smaller proportion of applicants are granted patents. <strong>Washington D.C.</strong> has the highest applicant-to-grantee ratio of 1.47, indicating that for every grantee, there are 1.47 applicants, suggesting a relatively larger gap between applicants and those granted patents in the region.",
+          description: "States with a higher applicant-to-grantee ratio indicate a larger gap between patent applicants and grantees, suggesting that in those states, a smaller proportion of applicants are granted patents. <br /><br /> <strong>Washington D.C.</strong> has the highest applicant-to-grantee ratio of 1.47, indicating that for every grantee, there are 1.47 applicants, suggesting a relatively larger gap between applicants and those granted patents in the region.",
           width: "100%", 
           height: "800px",
         },
@@ -103,7 +103,7 @@ function App() {
         },
         {
             type: "image",
-            description: "This map distorts the size of regions based on the number of patents they produce, making areas with more patents appear larger and those with fewer appear smaller. A clear regional pattern is evident, with states in the <strong>West, Northeast, and Midwest region producing the most patents</strong>, while states in the Southeast and Southwest contribute fewer patents. This highlights the uneven distribution of patent production across the country.",
+            description: "This map distorts the size of regions based on the number of patents they produce, making areas with more patents appear larger and those with fewer appear smaller. <br /><br /> A clear regional pattern is evident, with states in the <strong>West, Northeast, and Midwest region producing the most patents</strong>, while states in the Southeast and Southwest contribute fewer patents. This highlights the uneven distribution of patent production across the country.",
             src: cartogramImage,
             width: "100%",
         }, 
@@ -115,7 +115,7 @@ function App() {
           type: "dashboardfull",
           url: "https://public.tableau.com/views/CS6730/ParetoChart?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
-          description: "By examining the bars for each state and the cumulative line, we can see how a few states account for the majority of the patents, with the remaining states contributing far less. <strong>California leads with a notably higher patent count</strong> than the other states, highlighting its dominant role in patent production.",
+          description: "By examining the bars for each state and the cumulative line, we can see how a few states account for the majority of the patents, with the remaining states contributing far less. <br /><br /><strong>California leads with a notably higher patent count</strong> than the other states, highlighting its dominant role in patent production.",
           width: "100%", 
         },
         {
@@ -126,7 +126,7 @@ function App() {
             type: "dashboard",
             url: "https://public.tableau.com/views/Book1_17317883274520/CitationsandPAtents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
-            description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
+            description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. <br /><br /> Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
             width: "100%", 
         },
         {
@@ -137,7 +137,7 @@ function App() {
           type: "dashboardfull",
           url: "https://public.tableau.com/views/CS6730/PatentShareonParentalIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
           title: "Dashboard 2",
-          description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In areas like <strong>Washington D.C.</strong> and <strong>Massachusetts</strong>, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable <strong>gap in inventor representation across parental income levels</strong> nationwide.",
+          description: "Examine the proportion of inventors in each parental income quintile* in each state. Each bar represents a state, with colors showing patent ownership by parental income quintile groups. <br /><br />Individuals from the highest parental income group consistently make up 25-30% of inventors across states. In areas like <strong>Washington D.C.</strong> and <strong>Massachusetts</strong>, this disparity is even more pronounced compared to lower income groups. These patterns highlight a notable <strong>gap in inventor representation across parental income levels</strong> nationwide.",
           width: "100%"
         },
         {
@@ -148,7 +148,7 @@ function App() {
             type: "dashboard",
             url: "https://public.tableau.com/views/Book3_17331659142060/MeanAndAverageIncome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
-            description: "The <strong>median income remains relatively steady</strong>, while the <strong>mean income fluctuates significantly</strong>. The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
+            description: "The <strong>median income remains relatively steady</strong>, while the <strong>mean income fluctuates significantly</strong>. <br /><br />The disparity between these two lines highlights how income distribution among inventors varies, with the mean income being more affected by high earners, while the median reflects a more stable earning pattern",
             width: "100%", 
           },
         {
@@ -233,7 +233,7 @@ function App() {
                             <div key={index} className="section">
                                 <div className="dashboard-section flipped">
                                     <div className="dashboard-text">
-                                        <p>{section.description}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: section.description }} />
                                     </div>
                                     <div className="dashboard-container">
                                         <img
