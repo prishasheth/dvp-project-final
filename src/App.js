@@ -126,7 +126,7 @@ function App() {
             content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
         },
         {
-            type: "dashboard",
+            type: "dashboardfull",
             url: "https://public.tableau.com/views/Book1_17317883274520/CitationsandPAtents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
             description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. <br /><br /> Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
