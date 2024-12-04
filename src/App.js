@@ -127,7 +127,7 @@ function App() {
         },
         {
             type: "dashboardfull",
-            url: "https://public.tableau.com/views/Book1_17317883274520/CitationsandPAtents?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+            url: "https://public.tableau.com/views/SlopeChart_17333438733910/CitationsandPAtents?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
             title: "Dashboard 2",
             description: "Some universities rank high in citations, while others lead in the number of patents produced. A few institutions excel in both areas. These patterns are evident from how universities are positioned on each axis and the shifts in rankings which are highlighted by the connected lines. <br /><br /> Adjust the state filter to explore how universities within any selected state in the United States compare in terms of patent counts and citation counts.",
             width: "100%", 
