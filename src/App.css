@@ -17,14 +17,14 @@ h1 {
   margin-bottom: 40px;
   font-weight: 600;
   line-height: 1.4;
-  font-size: 36px; /* Increase heading font size */
+  font-size: 36px; 
 }
 
 h2 {
   margin-bottom: 20px;
   font-weight: 600;
   line-height: 1.4;
-  font-size: 28px; /* Increase heading font size */
+  font-size: 28px; 
 }
 
 .section {
@@ -66,7 +66,7 @@ h2 {
 
 .dashboardfull-section {
   display: flex;
-  flex-direction: column; /* Change to column for full-width dashboard */
+  flex-direction: column; 
   align-items: center; 
   justify-content: center;
   gap: 20px;
@@ -76,12 +76,12 @@ h2 {
 }
 
 .dashboardfull-container {
-  flex: none; /* Remove flex-grow, making it occupy only its content size */
+  flex: none; 
   display: flex;
   justify-content: center;
   align-items: center; 
   width: 100%;
-  margin-bottom: 20px; /* Space below the embedded container */
+  margin-bottom: 20px; 
 }
 
 .dashboardfull-text {
@@ -90,7 +90,7 @@ h2 {
   box-sizing: border-box;
   font-weight: 400;
   line-height: 1.8;
-  text-align: left; /* Center text under the container */
+  text-align: left; 
 }
 
 
@@ -100,7 +100,7 @@ h2 {
   width: 90%;
   box-sizing: border-box;
   line-height: 1.8;
-  font-size: 19px; /* Increase paragraph font size */
+  font-size: 19px; 
 }
 
 .image-and-text-section {
@@ -112,20 +112,20 @@ h2 {
 }
 
 .image-and-text-section .text-container {
-  flex: 2; /* Text container takes 40% of the width */
-  padding-left: 10%; /* Optional padding for better spacing */
+  flex: 2; 
+  padding-left: 10%; 
   padding-right: 40px;
   box-sizing: border-box;
   text-align: left;
 }
 
 .image-and-text-section .image-container {
-  flex: 3; /* Image container takes 60% of the width */
+  flex: 3; 
 }
 
 .image-and-text-section .image-container img {
   width: 100%;
-  height: 100vh; /* Ensure the image spans the full height of the screen */
-  object-fit: cover; /* Ensure the image covers the container */
-  object-position: top; /* Align the image from the top */
+  height: 100vh;
+  object-fit: cover; 
+  object-position: top; 
 }
