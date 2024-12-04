@@ -2,9 +2,16 @@ import React from "react";
 import TableauEmbed from "./components/TableauEmbed";
 import "./App.css";
 import cartogramImage from "./cartogram.png";
+import innovationImage from "./innovation.png"
 
 function App() {
     const sections = [
+        {
+            type: "image-and-text",
+            title: "Charting the Course of Innovation: Insights into Inventor Success Factors",
+            imageSrc: innovationImage, // Replace with the correct path to your image
+            altText: "An image showing global forest decline",
+        },
         {
             type: "paragraph",
             content: [
@@ -150,64 +157,87 @@ function App() {
     ];
 
     return (
-        <div className="app-container">
-            <h1>Insights and Analysis</h1>
+        <>
+            {/* Render the image-and-text section outside the app-container to span full width */}
             {sections.map((section, index) => {
-                if (section.type === "paragraph") {
+                if (section.type === "image-and-text") {
                     return (
-                        <div key={index} className="paragraph-section">
-                            {Array.isArray(section.content)
-                                ? section.content.map((text, i) => <p key={i}>{text}</p>)
-                                : <p>{section.content}</p>}
-                        </div>
-                    );
-                }
-                if (section.type === "dashboard") {
-                    return (
-                        <div key={index} className="section">
-                            <div className="dashboard-section flipped">
-                                <div className="dashboard-text">
-                                    {/* <h2>{section.title}</h2> */}
-                                    <p>{section.description}</p>
-                                </div>
-                                <div className="dashboard-container">
-                                    <TableauEmbed
-                                        url={section.url}
-                                        width={section.width}
-                                        height={section.height}
-                                    />
-                                </div>
+                        <div key={index} className="image-and-text-section">
+                            <div className="text-container">
+                                <h1>{section.title}</h1>
+                                {section.authors && section.authors.map((author, i) => (
+                                    <p key={i}>{author}</p>
+                                ))}
+                            </div>
+                            <div className="image-container">
+                                <img 
+                                    src={section.imageSrc} 
+                                    alt={section.altText} 
+                                />
                             </div>
                         </div>
                     );
                 }
-                if (section.type === "image") {
-                    return (
-                        <div key={index} className="section">
-                            <div className="dashboard-section flipped">
-                                <div className="dashboard-text">
-                                    {/* <h2>{section.title}</h2> */}
-                                    <p>{section.description}</p>
-                                </div>
-                                <div className="dashboard-container">
-                                    <img
-                                        src={section.src}
-                                        // alt={section.title}
-                                        style={{
-                                            width: section.width,
-                                            height: section.height,
-                                            objectFit: "cover",
-                                        }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    );
-                }
-                return null;
+                return null; // Ignore other types for this pass
             })}
-        </div>
+    
+            {/* Render the rest of the sections inside the app-container */}
+            <div className="app-container">
+                {sections.map((section, index) => {
+                    if (section.type === "paragraph") {
+                        return (
+                            <div key={index} className="paragraph-section">
+                                {Array.isArray(section.content)
+                                    ? section.content.map((text, i) => <p key={i}>{text}</p>)
+                                    : <p>{section.content}</p>}
+                            </div>
+                        );
+                    }
+                    if (section.type === "dashboard") {
+                        return (
+                            <div key={index} className="section">
+                                <div className="dashboard-section flipped">
+                                    <div className="dashboard-text">
+                                        <p>{section.description}</p>
+                                    </div>
+                                    <div className="dashboard-container">
+                                        <TableauEmbed
+                                            url={section.url}
+                                            width={section.width}
+                                            height={section.height}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    }
+                    if (section.type === "image") {
+                        return (
+                            <div key={index} className="section">
+                                <div className="dashboard-section flipped">
+                                    <div className="dashboard-text">
+                                        <p>{section.description}</p>
+                                    </div>
+                                    <div className="dashboard-container">
+                                        <img
+                                            src={section.src}
+                                            style={{
+                                                width: section.width,
+                                                height: section.height,
+                                                objectFit: "cover",
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    }
+                    return null;
+                })}
+            </div>
+        </>
     );
+    
 }
 
 export default App;
