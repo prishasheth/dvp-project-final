@@ -191,7 +191,7 @@ function App() {
                             <div key={index} className="paragraph-section">
                                 {Array.isArray(section.content)
                                     ? section.content.map((text, i) => <p key={i}>{text}</p>)
-                                    : <p>{section.content}</p>}
+                                    : <p dangerouslySetInnerHTML={{ __html: section.content }}/>}
                             </div>
                         );
                     }
