@@ -123,7 +123,7 @@ function App() {
         },
         {
             type: "paragraph",
-            content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
+            content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering <strong>insight in both the volume of innovation and its influence or recognition</strong> within the field.",
         },
         {
             type: "dashboardfull",
@@ -134,7 +134,7 @@ function App() {
         },
         {
             type: "paragraph",
-            content: "We now shift focus to universities and their impact on innovation by comparing share of patents and patent citations, offering insight in both the volume of innovation and its influence or recognition within the field.",
+            content: "Let’s now observe how parental income relates to innovation, shedding light on the <strong>socioeconomic backgrounds of inventors</strong> across the Unites States. ",
         },
         {
           type: "dashboardfull",
