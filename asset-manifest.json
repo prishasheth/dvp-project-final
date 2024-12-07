@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pages/psheth32/dvp-project-final/static/css/main.d28f2ef0.css",
-    "main.js": "/pages/psheth32/dvp-project-final/static/js/main.73f5c530.js",
-    "static/media/innovation.png": "/pages/psheth32/dvp-project-final/static/media/innovation.d92228db4d83c75242ee.png",
-    "static/media/cartogram.png": "/pages/psheth32/dvp-project-final/static/media/cartogram.96a991eaa0383036abf2.png",
-    "index.html": "/pages/psheth32/dvp-project-final/index.html",
-    "main.d28f2ef0.css.map": "/pages/psheth32/dvp-project-final/static/css/main.d28f2ef0.css.map",
-    "main.73f5c530.js.map": "/pages/psheth32/dvp-project-final/static/js/main.73f5c530.js.map"
+    "main.css": "/dvp-project-final/static/css/main.d28f2ef0.css",
+    "main.js": "/dvp-project-final/static/js/main.c4fb48b0.js",
+    "static/media/innovation.png": "/dvp-project-final/static/media/innovation.d92228db4d83c75242ee.png",
+    "static/media/cartogram.png": "/dvp-project-final/static/media/cartogram.96a991eaa0383036abf2.png",
+    "index.html": "/dvp-project-final/index.html",
+    "main.d28f2ef0.css.map": "/dvp-project-final/static/css/main.d28f2ef0.css.map",
+    "main.c4fb48b0.js.map": "/dvp-project-final/static/js/main.c4fb48b0.js.map"
   },
   "entrypoints": [
     "static/css/main.d28f2ef0.css",
-    "static/js/main.73f5c530.js"
+    "static/js/main.c4fb48b0.js"
   ]
 }
